@@ -41,8 +41,8 @@ public class AccountsServiceImpl implements IAccountsService {
                     +customerDto.getMobileNumber());
         }
         Customer customer= CustomerMapper.mapToCustomer(customerDto, new Customer());
-        customer.setCreatedAt(LocalDateTime.now());
-        customer.setCreatedBy("Aditya");
+        /*customer.setCreatedAt(LocalDateTime.now());
+        customer.setCreatedBy("Aditya");*/
         final var savedCustomer = customerRepository.save(customer);
         accountsRepository.save(createNewAccount(savedCustomer));
 
@@ -62,8 +62,8 @@ public class AccountsServiceImpl implements IAccountsService {
         newAccount.setAccountNumber(randomAccNumber);
         newAccount.setAccountType(AccountsConstants.SAVINGS);
         newAccount.setBranchAddress(AccountsConstants.ADDRESS);
-        newAccount.setCreatedAt(LocalDateTime.now());
-        newAccount.setCreatedBy("Aditya");
+        /*newAccount.setCreatedAt(LocalDateTime.now());
+        newAccount.setCreatedBy("Aditya");*/
         return newAccount;
     }
 
