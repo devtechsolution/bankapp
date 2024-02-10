@@ -3,6 +3,9 @@ package org.as.devtechsolution.accounts.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+/**
+ * @author Aditya Srivastva on 25-01-2024
+ */
 @Entity
 @Table(name = "customer")
 @Getter

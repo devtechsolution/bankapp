@@ -6,6 +6,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
 
+/**
+ * @author Aditya Srivastva on 25-01-2024
+ */
 @Entity
 @Table(name = "accounts")
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
