@@ -14,7 +14,6 @@ import org.as.devtechsolution.accounts.dto.CustomerDto;
 import org.as.devtechsolution.accounts.dto.ErrorResponseDto;
 import org.as.devtechsolution.accounts.dto.ResponseDto;
 import org.as.devtechsolution.accounts.service.IAccountsService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
