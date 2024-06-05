@@ -29,8 +29,8 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 @Validated
 @Tag(
-        name = "CRUD REST APIs for Accounts in EazyBank",
-        description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE account details"
+        name = "CRUD REST APIs for Accounts in BankApp",
+        description = "CRUD REST APIs in BankApp to CREATE, UPDATE, FETCH AND DELETE account details"
 )
 public class AccountController {
 

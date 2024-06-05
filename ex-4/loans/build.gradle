@@ -2,6 +2,8 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.4'
 	id 'io.spring.dependency-management' version '1.1.4'
+	//id 'io.buildpacks.pack' version '0.10.0'
+	id "com.google.cloud.tools.jib" version "3.4.2"
 }
 
 group = 'org.as.devtechsolution'
@@ -37,4 +39,31 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+//buildpack {
+//	builder 'heroku/buildpack-gradle'
+//	imageName 'adityasrivastva/${project.artifactId}:e4'
+//	//'my-spring-boot-app'
+//}
+
+//buildpack {
+//	builder 'heroku/buildpack-gradle'
+//	imageName 'adityasrivastva/${project.artifactId}:e4'
+//}
+
+apply plugin: 'com.google.cloud.tools.jib'
+jib {
+//	from {
+//		image = 'openjdk:17-slim'
+//	}
+//	container {
+//		//jvmFlags = ['-Dmy.property=example.value', '-Xms512m', '-Xdebug']
+//		mainClass = 'com.package.K8sLearningApplication'
+//		ports = ['8080']
+//		//labels = [key1:'value1', key2:'value2']
+//		//format = 'OCI'
+//	}
+	to {
+		image = 'adityasrivastva/loans:e4'
+	}
 }
