@@ -85,7 +85,7 @@
 				<version>3.4.3</version>
 				<configuration>
 					<to>
-						<image>registry.hub.docker.com/adityasrivastva/${project.artifactId}:s4</image>
+						<image>docker.io/adityasrivastva/${project.artifactId}:s4</image>
 					</to>
 				</configuration>
 			</plugin>
