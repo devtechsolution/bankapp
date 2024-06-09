@@ -7,6 +7,7 @@ plugins {
 
 group = 'org.as.devtechsolution'
 version = '0.0.1-SNAPSHOT'
+String name= rootProject.name
 
 java {
 	sourceCompatibility = '17'
@@ -55,6 +56,6 @@ jib {
 //		//format = 'OCI'
 //	}
 	to {
-		image = 'adityasrivastva/cards:e4'
+		image = "adityasrivastva/${name}:e6"
 	}
 }
