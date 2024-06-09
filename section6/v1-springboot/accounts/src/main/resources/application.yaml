@@ -16,3 +16,15 @@ spring:
       ddl-auto: update
     show-sql: true
 
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Bankapp accounts related local APIs "
+  contactDetails:
+    name: "Aditya Srivastva - Developer"
+    email: "aditya@devbank.com"
+  onCallSupport:
+    - (111) 234-1234
+    - (222) 456-1345
+
