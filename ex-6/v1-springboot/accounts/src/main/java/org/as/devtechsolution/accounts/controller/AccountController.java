@@ -38,7 +38,6 @@ import org.springframework.web.bind.annotation.*;
 )
 public class AccountController {
 
-
     private final IAccountsService iAccountsService;
 
     public AccountController(final IAccountsService iAccountsService) {
@@ -53,6 +52,7 @@ public class AccountController {
 
     @Autowired
     private AccountContactInfoDto accountContactInfoDto;
+
 
 
     @Operation(
@@ -180,6 +180,7 @@ public class AccountController {
         }
     }
 
+
     @Operation(
             summary = "Get Build information",
             description = "Get Build information that is deployed into cards microservice"
@@ -254,4 +255,5 @@ public class AccountController {
                 .status(HttpStatus.OK)
                 .body(accountContactInfoDto);
     }
+
 }
