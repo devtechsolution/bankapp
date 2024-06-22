@@ -2,6 +2,10 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: "accounts"
+  profiles:
+    active: "qa"
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
@@ -15,16 +19,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import: "optional:configserver:http://localhost:8071/"
 
-build:
-  version: "1.0"
-
-accounts:
-  message: "Welcome to Bankapp accounts related local APIs "
-  contactDetails:
-    name: "Aditya Srivastva - Developer"
-    email: "aditya@devbank.com"
-  onCallSupport:
-    - (111) 234-1234
-    - (222) 456-1345
 

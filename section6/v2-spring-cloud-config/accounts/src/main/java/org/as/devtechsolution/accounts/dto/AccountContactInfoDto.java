@@ -10,6 +10,6 @@ import java.util.Map;
  */
 
 
-@ConfigurationProperties(prefix = "cards")
+@ConfigurationProperties(prefix = "accounts")
 public record AccountContactInfoDto(String message, Map<String, String> contactDetails, List<String> onCallSupport) {
 }
